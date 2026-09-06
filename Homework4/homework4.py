@@ -5,8 +5,9 @@ class Drawable(Protocol) :
        ...
    ...
 
+
 def render ( shape: Drawable ) -> None:
-    ...
+   print(shape.draw())
 
 
 class Circle:
