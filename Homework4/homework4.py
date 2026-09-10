@@ -1,6 +1,6 @@
 from typing import Protocol
 
-class Drawable(Protocol) :
+class Drawable( Protocol ) :
    def draw() -> str:
        ...
    ...
@@ -12,12 +12,12 @@ def render ( shape: Drawable ) -> None:
 
 class Circle:
     def draw(self) -> str:
-        return "( )"
+        return "(  )"
 
 
 class Square:
  def draw(self) -> str:
-         return "( )"   
+         return "(  )"   
 
 
 render(Circle())
