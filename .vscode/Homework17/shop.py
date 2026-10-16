@@ -35,7 +35,7 @@ def db():
 
 @pytest.fixture(scope="module")
 def settings():
-    return {}
+    return {} 
 
 
 @pytest.fixture(params=["UAH", "USD", "EUR"])

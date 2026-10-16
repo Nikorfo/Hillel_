@@ -2,7 +2,6 @@ import pytest
 
 from shop import discount, delivery
 
-
 @pytest.mark.parametrize("percent", [0, 50, 75, 100])
 def test_discount_not_negatvie_works( percent ):
     assert discount(100, percent) >= 0

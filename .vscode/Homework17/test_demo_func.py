@@ -19,7 +19,7 @@ def test_two_users(make_user):
     ann = make_user()
 
     assert ann != bob
-
+ 
 
 def test_insert( db ):
     db.execute( "INSERT INTO users VALUES ('ann')" )

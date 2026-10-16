@@ -2,7 +2,6 @@ import pytest
 
 from shop import split_bill, old_username, username
 
-
 # def test_float():
 #     assert 0.1 + 0.1 + 0.1 == 0.3
 
