@@ -12,7 +12,7 @@ console.setFormatter(logging.Formatter("%(asctime)s: [%(levelname)s] -- %(messag
 
 file = logging.FileHandler("homework.log", encoding="utf-8")
 file.setLevel(logging.DEBUG)
-file.setFormatter("%(asctime)s: [%(levelname)s] [%(funcName)s - %(lineno)d]: %(message)s")
+file.setFormatter(logging.Formatter("%(asctime)s: [%(levelname)s] [%(funcName)s - %(lineno)d]: %(message)s"))
 
 
 logger.addHandler(console)
