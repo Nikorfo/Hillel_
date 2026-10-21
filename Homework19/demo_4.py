@@ -17,7 +17,7 @@ rows = [
         "text": quote.select_one("span.text").get_text(strip=True).strip("“”"),
     }
     for quote in soup.select("div.quote")
-]
+] 
 
 with open("life.csv", "w", newline="", encoding="utf-8") as file:
     writer = csv.DictWriter(file, fieldnames=["author", "text"])
