@@ -1,0 +1,5 @@
+﻿click
+cryptography
+pytest
+pytest-cov
+pytest-mock
